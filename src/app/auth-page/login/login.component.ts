@@ -38,7 +38,6 @@ export class LoginComponent implements OnInit {
     this.apiService.login({ email, password }).subscribe(
       res => {
         this.isLoading = false
-        console.log(res);
       
       },
       error => {
@@ -48,7 +47,6 @@ export class LoginComponent implements OnInit {
 
       },
       () => {
-        console.log('done');
         this.isLoading = false
         this.errorMsg = null
         this.router.navigate([`/content`])

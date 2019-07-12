@@ -45,16 +45,15 @@ export class ContentComponent implements OnInit {
       () => {
         this.isLoading = false
         this.apiService.postUpdated.subscribe(res => {
-          console.log(res);
-
+      
         })
       }
   }
 
   onDelete(i) {
-    console.log(i._id);
+  
     this.apiService.deletePosts(i._id).subscribe(res => {
-      console.log(res);
+      
 
     }, err => {
       console.log(err);

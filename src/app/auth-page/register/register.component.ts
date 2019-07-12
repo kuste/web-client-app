@@ -44,7 +44,6 @@ export class RegisterComponent implements OnInit {
     this.apiService.signup({ firstName, lastName, email, password })
       .subscribe(
         res => {
-          console.log(res.message)
           this.isLoading = false
           this.successMsg = res.message
         },
@@ -55,7 +54,7 @@ export class RegisterComponent implements OnInit {
 
         },
         () => {
-          console.log('done');
+
           this.isLoading = false
           this.errorMsg = null
           setTimeout(() => {

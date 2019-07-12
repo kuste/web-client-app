@@ -48,7 +48,6 @@ export class UserPageComponent implements OnInit {
 
   handleEdit() {
     this.showUpdateModal = true
-    console.log('click');
 
   }
   onClose() {

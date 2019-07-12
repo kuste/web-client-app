@@ -89,7 +89,6 @@ export class EditPostComponent implements OnInit {
     let valid = newStartDate < newEndDate
 
     if (valid && this.createForm.valid) {
-      console.log('valid');
 
       const post = {
         user: this.user.id,
@@ -104,12 +103,9 @@ export class EditPostComponent implements OnInit {
         contactEmail: this.createForm.value.email
 
       }
-      console.log(this.post);
-
 
       this.isLoading = true
       this.apiService.updatePost(this.postId, post).subscribe(res => {
-        console.log(res);
         this.isLoading = false
 
 

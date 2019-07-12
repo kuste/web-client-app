@@ -50,7 +50,7 @@ export class CreatePostComponent implements OnInit {
 
       
     if (valid && this.createForm.valid && this.user) {
-      console.log('valid');
+
 
       const post = {
 
@@ -66,11 +66,10 @@ export class CreatePostComponent implements OnInit {
         contactEmail: this.createForm.value.email
 
       }
-      console.log(post);
+  
 
       this.isLoading = true
       this.apiService.createPost(post).subscribe(res => {
-        console.log(res);
         this.isLoading = false
 
       },

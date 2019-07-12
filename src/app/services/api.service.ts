@@ -22,7 +22,8 @@ export class ApiService {
     private userPosts: IPostDto[] = []
     postUpdated = new Subject<IPostDto[]>();
 
-    baseUrl = 'http://localhost:3000/'
+    baseUrl = 'https://rest-api-web-app.herokuapp.com/'
+
 
     private tokenExpirationTimer: any;
     helper = new JwtHelperService();
@@ -39,9 +40,7 @@ export class ApiService {
 
         return this.http.post<AuthResponseData>(`${this.baseUrl}user/signup`,
             { email: registerUser.email, password: registerUser.password, firstName: registerUser.firstName, lastName: registerUser.lastName })
-            .pipe(catchError(this.handleError), tap(resData => {
-                console.log(resData);
-            }))
+            .pipe(catchError(this.handleError))
     }
 
     public autoLogin() {
