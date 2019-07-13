@@ -17,6 +17,7 @@ export class WelcomeScreenComponent implements OnInit {
     this.isLoading = true
     this.apiService.getAllPosts().subscribe(posts => {
       this.posts = posts.posts
+      this.posts.reverse()
       this.isLoading = false
     })
 

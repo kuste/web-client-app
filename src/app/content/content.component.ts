@@ -34,6 +34,7 @@ export class ContentComponent implements OnInit {
     this.isLoading = true
     this.apiService.getAllUserPosts().subscribe(res => {
       this.posts = res.posts
+      this.posts.reverse()
       this.isLoading = false
     },
       error => {
