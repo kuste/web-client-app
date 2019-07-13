@@ -10,7 +10,7 @@ import { IPostDto } from '../models/post'
 import { Router } from '@angular/router'
 import { DataHandlerService } from './data-handler.service';
 import { IUserDto } from '../models/user'
-
+import { environment } from '../../environments/environment'
 
 
 @Injectable({
@@ -22,7 +22,7 @@ export class ApiService {
     private userPosts: IPostDto[] = []
     postUpdated = new Subject<IPostDto[]>();
 
-    baseUrl = 'https://rest-api-web-app.herokuapp.com/'
+    baseUrl = environment.baseUrl
 
 
     private tokenExpirationTimer: any;
