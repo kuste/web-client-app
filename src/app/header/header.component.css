@@ -32,7 +32,6 @@ li a {
   min-height: fit-content !important;
 }
 
-
 li a:hover {
   width: 100%;
   color: rgb(207, 64, 64) !important;
@@ -74,3 +73,13 @@ li a:hover {
 .dropdown-menu li {
   width: 100%;
 }
+
+
+  .navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+ 
+  }
+ 

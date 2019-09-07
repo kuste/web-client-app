@@ -1,6 +1,6 @@
 .posts {
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, 0);
    
@@ -30,3 +30,12 @@
     right: 50%;
     transform: translate(50%,20vh)
 }
+ .text-centered {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: white;
+    padding:2em;
+    text-align: center;
+ 
+  }
