@@ -1,5 +1,17 @@
 # WebApp
 
+## Author: Ivica Kustura
+#### Description: 
+This is a general-purpose application for creating and posting posts by different registered users.
+It is used for demonstrative purposes only and can be repurposed for anything specific in the future.
+#### Technologies used:
+* Angular 7 a platform for building mobile and desktop web applications [https://angular.io/](https://angular.io/)
+* Bootstrap 3 for css and layout [https://getbootstrap.com/](https://getbootstrap.com/)
+    
+        
+            
+            
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
